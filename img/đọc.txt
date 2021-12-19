@@ -1,0 +1,2 @@
+love.png => icon nhỏ nhỏ trên thanh google
+còn 2 ảnh kia tự đổi nhé hihi ><

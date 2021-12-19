@@ -1,0 +1,211 @@
+@font-face {
+    font-family: number_love_time_Trung;
+    src: url(../Facebook.com_Puti78/font/FancyHeartScript.ttf);
+}
+@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::selection
+{
+    background-color: pink ;
+    color: #000;
+    
+}
+body
+{
+    background: radial-gradient(ellipse at bottom, pink 0%, rgb(238, 143, 159) 50% , rgb(252, 131, 151) 100%);
+    background-attachment: fixed;
+    overflow: hidden;
+}
+:root
+{
+    --color-heart : pink;
+    --size-heart : 100px;
+    --avatar-img : 150px;
+}
+[trung="nguyenvtrung"]
+{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.heart ,.heart::before ,.heart::after
+{
+    box-shadow: 0 0 10px 10px #fff;
+    animation: border_heart 5s linear infinite;
+}
+
+.heart
+{
+    
+    position: relative;
+    top: 120%;
+    left: 20%;
+    width: var(--size-heart);
+    height: var(--size-heart);
+    background-color: var(--color-heart);
+    transform: rotate(45deg) translate(-50%,-50%);
+}
+.heart::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--color-heart);
+}
+
+.heart::after
+{
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--color-heart);
+}
+
+.heart_shadow
+{
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: var(--size-heart);
+    height: var(--size-heart);
+    background-color: var(--color-heart);
+    transform: rotate(0) translate(-50%,-50%);
+    z-index: 1;
+}
+.heart_shadow::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--color-heart);
+}
+
+.heart_shadow::after
+{
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--color-heart);
+}
+#ngay,#gio,#phut,#giay
+{
+    position: absolute;
+    font-family: number_love_time_Trung;
+    top: 10%;
+    left: 50%;
+    transform: rotate(-45deg) translate(-50%,-50%);
+    font-size: calc(var(--size-heart) / 2);
+    z-index: 1;
+} 
+
+.ngay
+{
+    grid-area: 3/2;
+}
+.gio
+{
+    grid-area: 4/3;
+}
+.phut
+{
+    grid-area: 3/4;
+}
+.giay
+{
+    grid-area: 4/5;
+}
+
+.title_heart_time
+{
+    position: absolute;
+    transform: rotate(-45deg);
+    font-size: calc(var(--size-heart) / 5.5);
+    font-family: 'MonteCarlo', cursive;
+    z-index: 2;
+}
+
+
+.anh_dai_dien
+{
+    position: fixed;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    z-index: 10;
+}
+
+
+.avatar img
+{
+    position: relative;
+    width: var(--avatar-img);
+    height: var(--avatar-img);
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px dotted pink;
+
+}
+
+
+#tree
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+}
+.tree1
+{
+    position: absolute;
+    width: 200px;
+    bottom: 0;
+    right: 0;
+}
+.tree2
+{
+    position: absolute;
+    width: 250px;
+    bottom: -40px;
+    left: 0;
+}
+
+
+
+#trung_heart
+{
+    --size : 34px;
+    top: 34px;
+}
+
+
